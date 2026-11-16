@@ -252,6 +252,29 @@ em.s{font-family:var(--display);font-style:italic;font-weight:400;color:var(--go
 .guar b{display:block;font-size:15px;font-weight:600}
 .guar span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
 
+/* ---------- bandeira e oferta v2 ---------- */
+.tchip .flag{width:17px;height:auto;border-radius:2px;flex:none;box-shadow:0 1px 4px rgba(0,0,0,.5)}
+.offer-grid{display:grid;gap:18px;max-width:1000px;margin:0 auto}
+.bundle{padding:26px 22px;display:flex;flex-direction:column}
+.bundle h3{font:400 30px/1.1 var(--display);letter-spacing:-.01em}
+.bundle>small{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+.mods{list-style:none;padding:0;margin:18px 0 0}
+.mods li{display:grid;grid-template-columns:36px 1fr auto;align-items:center;gap:8px;padding:14px 4px;border-top:1px solid var(--line)}
+.mods li span{font:400 20px/1 var(--display);color:var(--gold)}
+.mods li b{font-weight:500;font-size:15.5px;letter-spacing:-.01em}
+.mods li small{font-size:12px;color:var(--muted);letter-spacing:.04em;white-space:nowrap}
+.mods li.end{border-top:0;margin-top:6px;border-radius:12px;background:linear-gradient(90deg,rgba(200,166,106,.12),transparent 85%)}
+.mods li.end span{font-size:16px}
+.us{display:flex;gap:14px;align-items:center;margin-top:auto;padding:16px;border-radius:16px;border:1px solid rgba(200,166,106,.35);background:rgba(200,166,106,.05);font-size:14px;color:var(--soft);line-height:1.5}
+.us .flag{width:48px;height:auto;border-radius:3px;flex:none;box-shadow:0 6px 16px -6px rgba(0,0,0,.7)}
+.us b{display:block;color:var(--text);font-weight:600;margin-bottom:2px}
+.bundle .us{margin-top:22px}
+.price-card .incl{margin-top:20px}
+@media (min-width:900px){
+  .offer-grid{grid-template-columns:1fr 1fr;align-items:stretch;gap:24px}
+  .offer-grid .price-card{margin:0;display:flex;flex-direction:column}
+  .offer-grid .price-card .price{margin-top:auto}
+}
 /* faq */
 .faq{max-width:800px;margin:0 auto;display:grid;gap:10px}
 .faq details{border-radius:18px;overflow:hidden}
@@ -421,7 +444,7 @@ em.s{font-family:var(--display);font-style:italic;font-weight:400;color:var(--go
           <div class="fcard__viz tchips">
             <span class="tchip"><i>01</i>Conta global</span>
             <span class="tchip"><i>02</i>Investimentos</span>
-            <span class="tchip"><i>03</i>EUA</span>
+            <span class="tchip"><i>03</i><svg class="flag" viewBox="0 0 38 20" aria-label="Bandeira dos Estados Unidos" role="img"><rect width="38" height="20" fill="#fff"/><rect y="0.000" width="38" height="1.538" fill="#B22234"/><rect y="3.077" width="38" height="1.538" fill="#B22234"/><rect y="6.154" width="38" height="1.538" fill="#B22234"/><rect y="9.231" width="38" height="1.538" fill="#B22234"/><rect y="12.308" width="38" height="1.538" fill="#B22234"/><rect y="15.385" width="38" height="1.538" fill="#B22234"/><rect y="18.462" width="38" height="1.538" fill="#B22234"/><rect width="15.2" height="10.769" fill="#3C3B6E"/><circle cx="1.27" cy="0.60" r="0.42" fill="#fff"/><circle cx="3.80" cy="0.60" r="0.42" fill="#fff"/><circle cx="6.33" cy="0.60" r="0.42" fill="#fff"/><circle cx="8.87" cy="0.60" r="0.42" fill="#fff"/><circle cx="11.40" cy="0.60" r="0.42" fill="#fff"/><circle cx="13.93" cy="0.60" r="0.42" fill="#fff"/><circle cx="2.53" cy="1.79" r="0.42" fill="#fff"/><circle cx="5.07" cy="1.79" r="0.42" fill="#fff"/><circle cx="7.60" cy="1.79" r="0.42" fill="#fff"/><circle cx="10.13" cy="1.79" r="0.42" fill="#fff"/><circle cx="12.67" cy="1.79" r="0.42" fill="#fff"/><circle cx="1.27" cy="2.99" r="0.42" fill="#fff"/><circle cx="3.80" cy="2.99" r="0.42" fill="#fff"/><circle cx="6.33" cy="2.99" r="0.42" fill="#fff"/><circle cx="8.87" cy="2.99" r="0.42" fill="#fff"/><circle cx="11.40" cy="2.99" r="0.42" fill="#fff"/><circle cx="13.93" cy="2.99" r="0.42" fill="#fff"/><circle cx="2.53" cy="4.19" r="0.42" fill="#fff"/><circle cx="5.07" cy="4.19" r="0.42" fill="#fff"/><circle cx="7.60" cy="4.19" r="0.42" fill="#fff"/><circle cx="10.13" cy="4.19" r="0.42" fill="#fff"/><circle cx="12.67" cy="4.19" r="0.42" fill="#fff"/><circle cx="1.27" cy="5.38" r="0.42" fill="#fff"/><circle cx="3.80" cy="5.38" r="0.42" fill="#fff"/><circle cx="6.33" cy="5.38" r="0.42" fill="#fff"/><circle cx="8.87" cy="5.38" r="0.42" fill="#fff"/><circle cx="11.40" cy="5.38" r="0.42" fill="#fff"/><circle cx="13.93" cy="5.38" r="0.42" fill="#fff"/><circle cx="2.53" cy="6.58" r="0.42" fill="#fff"/><circle cx="5.07" cy="6.58" r="0.42" fill="#fff"/><circle cx="7.60" cy="6.58" r="0.42" fill="#fff"/><circle cx="10.13" cy="6.58" r="0.42" fill="#fff"/><circle cx="12.67" cy="6.58" r="0.42" fill="#fff"/><circle cx="1.27" cy="7.78" r="0.42" fill="#fff"/><circle cx="3.80" cy="7.78" r="0.42" fill="#fff"/><circle cx="6.33" cy="7.78" r="0.42" fill="#fff"/><circle cx="8.87" cy="7.78" r="0.42" fill="#fff"/><circle cx="11.40" cy="7.78" r="0.42" fill="#fff"/><circle cx="13.93" cy="7.78" r="0.42" fill="#fff"/><circle cx="2.53" cy="8.97" r="0.42" fill="#fff"/><circle cx="5.07" cy="8.97" r="0.42" fill="#fff"/><circle cx="7.60" cy="8.97" r="0.42" fill="#fff"/><circle cx="10.13" cy="8.97" r="0.42" fill="#fff"/><circle cx="12.67" cy="8.97" r="0.42" fill="#fff"/><circle cx="1.27" cy="10.17" r="0.42" fill="#fff"/><circle cx="3.80" cy="10.17" r="0.42" fill="#fff"/><circle cx="6.33" cy="10.17" r="0.42" fill="#fff"/><circle cx="8.87" cy="10.17" r="0.42" fill="#fff"/><circle cx="11.40" cy="10.17" r="0.42" fill="#fff"/><circle cx="13.93" cy="10.17" r="0.42" fill="#fff"/></svg>EUA</span>
             <span class="tchip"><i>04</i>Renda fixa</span>
             <span class="tchip"><i>05</i>Diversificação</span>
           </div>
@@ -544,7 +567,7 @@ em.s{font-family:var(--display);font-style:italic;font-weight:400;color:var(--go
       <div class="steps">
         <div class="step rv"><span class="step__n">01</span><h3>O Risco do Real <small>8 MIN</small></h3><p>Por que ter 100% do patrimônio em uma única moeda é um risco que quase ninguém enxerga.</p></div>
         <div class="step rv"><span class="step__n">02</span><h3>Quanto Dolarizar? <small>8 MIN</small></h3><p>Como definir a fatia em dólar que faz sentido para o seu perfil e os seus objetivos.</p></div>
-        <div class="step rv"><span class="step__n">03</span><h3>Os 5 Caminhos para o Dólar <small>15 MIN</small></h3><p>As principais formas de ter dólar, com as vantagens e os cuidados de cada uma.</p></div>
+        <div class="step rv"><span class="step__n">03</span><h3>Os 5 Caminhos para o Dólar <small>15 MIN</small></h3><p>As principais formas de ter dólar, incluindo o caminho pelos EUA, com as vantagens e os cuidados de cada uma.</p></div>
         <div class="step rv"><span class="step__n">04</span><h3>Tudo Dentro da Lei <small>8 MIN</small></h3><p>Conformidade e regularidade: o que você precisa saber para fazer tudo certo.</p></div>
         <div class="step rv"><span class="step__n">05</span><h3>Golpes e Armadilhas <small>6 MIN</small></h3><p>Os sinais de alerta e as promessas que você deve evitar para não perder dinheiro.</p></div>
         <div class="step rv"><span class="step__n">06</span><h3>Seu Plano B Internacional <small>10 MIN</small></h3><p>Hora de juntar as peças e montar o seu próprio plano.</p></div>
@@ -576,20 +599,20 @@ em.s{font-family:var(--display);font-style:italic;font-weight:400;color:var(--go
     <div class="wrap">
       <div class="head rv">
         <span class="tag">Investimento</span>
-        <h2>Um valor pequeno para <em class="s">uma decisão grande.</em></h2>
+        <h2>Seu Plano B completo <em class="s">por R$ 37,90</em></h2>
+        <p>Pagamento único, sem mensalidade. Você leva os 6 módulos e o encerramento com o plano de 30 dias.</p>
       </div>
-      <div class="offer">
+      <div class="offer-grid">
+        <div class="bundle glass rv">
+          <h3>O que você leva</h3>
+          <small>Conteúdo gravado, para assistir no seu ritmo</small>
+          <ol class="mods"><li><span>01</span><b>O Risco do Real</b><small>8 min</small></li><li><span>02</span><b>Quanto Dolarizar?</b><small>8 min</small></li><li><span>03</span><b>Os 5 Caminhos para o Dólar</b><small>15 min</small></li><li><span>04</span><b>Tudo Dentro da Lei</b><small>8 min</small></li><li><span>05</span><b>Golpes e Armadilhas</b><small>6 min</small></li><li><span>06</span><b>Seu Plano B Internacional</b><small>10 min</small></li><li class="end"><span>★</span><b>Seu Plano B em 30 Dias</b><small>Encerramento</small></li></ol>
+          <div class="us"><svg class="flag" viewBox="0 0 38 20" aria-label="Bandeira dos Estados Unidos" role="img"><rect width="38" height="20" fill="#fff"/><rect y="0.000" width="38" height="1.538" fill="#B22234"/><rect y="3.077" width="38" height="1.538" fill="#B22234"/><rect y="6.154" width="38" height="1.538" fill="#B22234"/><rect y="9.231" width="38" height="1.538" fill="#B22234"/><rect y="12.308" width="38" height="1.538" fill="#B22234"/><rect y="15.385" width="38" height="1.538" fill="#B22234"/><rect y="18.462" width="38" height="1.538" fill="#B22234"/><rect width="15.2" height="10.769" fill="#3C3B6E"/><circle cx="1.27" cy="0.60" r="0.42" fill="#fff"/><circle cx="3.80" cy="0.60" r="0.42" fill="#fff"/><circle cx="6.33" cy="0.60" r="0.42" fill="#fff"/><circle cx="8.87" cy="0.60" r="0.42" fill="#fff"/><circle cx="11.40" cy="0.60" r="0.42" fill="#fff"/><circle cx="13.93" cy="0.60" r="0.42" fill="#fff"/><circle cx="2.53" cy="1.79" r="0.42" fill="#fff"/><circle cx="5.07" cy="1.79" r="0.42" fill="#fff"/><circle cx="7.60" cy="1.79" r="0.42" fill="#fff"/><circle cx="10.13" cy="1.79" r="0.42" fill="#fff"/><circle cx="12.67" cy="1.79" r="0.42" fill="#fff"/><circle cx="1.27" cy="2.99" r="0.42" fill="#fff"/><circle cx="3.80" cy="2.99" r="0.42" fill="#fff"/><circle cx="6.33" cy="2.99" r="0.42" fill="#fff"/><circle cx="8.87" cy="2.99" r="0.42" fill="#fff"/><circle cx="11.40" cy="2.99" r="0.42" fill="#fff"/><circle cx="13.93" cy="2.99" r="0.42" fill="#fff"/><circle cx="2.53" cy="4.19" r="0.42" fill="#fff"/><circle cx="5.07" cy="4.19" r="0.42" fill="#fff"/><circle cx="7.60" cy="4.19" r="0.42" fill="#fff"/><circle cx="10.13" cy="4.19" r="0.42" fill="#fff"/><circle cx="12.67" cy="4.19" r="0.42" fill="#fff"/><circle cx="1.27" cy="5.38" r="0.42" fill="#fff"/><circle cx="3.80" cy="5.38" r="0.42" fill="#fff"/><circle cx="6.33" cy="5.38" r="0.42" fill="#fff"/><circle cx="8.87" cy="5.38" r="0.42" fill="#fff"/><circle cx="11.40" cy="5.38" r="0.42" fill="#fff"/><circle cx="13.93" cy="5.38" r="0.42" fill="#fff"/><circle cx="2.53" cy="6.58" r="0.42" fill="#fff"/><circle cx="5.07" cy="6.58" r="0.42" fill="#fff"/><circle cx="7.60" cy="6.58" r="0.42" fill="#fff"/><circle cx="10.13" cy="6.58" r="0.42" fill="#fff"/><circle cx="12.67" cy="6.58" r="0.42" fill="#fff"/><circle cx="1.27" cy="7.78" r="0.42" fill="#fff"/><circle cx="3.80" cy="7.78" r="0.42" fill="#fff"/><circle cx="6.33" cy="7.78" r="0.42" fill="#fff"/><circle cx="8.87" cy="7.78" r="0.42" fill="#fff"/><circle cx="11.40" cy="7.78" r="0.42" fill="#fff"/><circle cx="13.93" cy="7.78" r="0.42" fill="#fff"/><circle cx="2.53" cy="8.97" r="0.42" fill="#fff"/><circle cx="5.07" cy="8.97" r="0.42" fill="#fff"/><circle cx="7.60" cy="8.97" r="0.42" fill="#fff"/><circle cx="10.13" cy="8.97" r="0.42" fill="#fff"/><circle cx="12.67" cy="8.97" r="0.42" fill="#fff"/><circle cx="1.27" cy="10.17" r="0.42" fill="#fff"/><circle cx="3.80" cy="10.17" r="0.42" fill="#fff"/><circle cx="6.33" cy="10.17" r="0.42" fill="#fff"/><circle cx="8.87" cy="10.17" r="0.42" fill="#fff"/><circle cx="11.40" cy="10.17" r="0.42" fill="#fff"/><circle cx="13.93" cy="10.17" r="0.42" fill="#fff"/></svg><span><b>Caminho pelos EUA incluído</b>O módulo 03 compara 5 formas de ter dólar, e uma delas é o caminho pelos Estados Unidos.</span></div>
+        </div>
         <div class="price-card glass rv">
-          <span class="tag">Acesso ao treinamento completo</span>
+          <span class="tag">Acesso completo</span>
           <h2>Plano B · Patrimônio em Dólar</h2>
-          <ul class="incl">
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>6 módulos práticos e diretos ao ponto</li>
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Cerca de 55 minutos de conteúdo</li>
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Os 5 caminhos para ter dólar, comparados</li>
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Como fazer tudo dentro da lei</li>
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Golpes e armadilhas para evitar</li>
-            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Encerramento: Seu Plano B em 30 Dias</li>
-          </ul>
+          <ul class="incl"><li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Cerca de 55 minutos, direto ao ponto</li><li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Os 5 caminhos para ter dólar, comparados</li><li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Como fazer tudo dentro da lei</li><li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Como reconhecer golpes e armadilhas</li><li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Seu plano internacional e o roteiro de 30 dias</li></ul>
           <div class="price">
             <small>Pagamento único</small>
             <div class="price__v" aria-label="R$ 37,90"><i>R$</i><b>37</b><u>,90</u></div>
