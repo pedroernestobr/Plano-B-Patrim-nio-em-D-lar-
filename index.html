@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plano B · Patrimônio em Dólar</title>
+<meta name="description" content="Em 6 módulos diretos ao ponto (cerca de 55 minutos), entenda como proteger parte do seu patrimônio em dólar com segurança e dentro da lei. R$ 37,90, pagamento único.">
+<meta name="theme-color" content="#091C29">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Plano B · Patrimônio em Dólar">
+<meta property="og:description" content="6 módulos práticos para dolarizar parte do seu patrimônio com segurança, dentro da lei e longe de golpes.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#091C29;
+  --bg-2:#0c2434;
+  --line:rgba(245,243,237,.09);
+  --line-2:rgba(245,243,237,.16);
+  --text:#F5F3ED;
+  --muted:#8D9EA5;
+  --soft:#c3ccce;
+  --green:#247E67;
+  --green-2:#2f9a7f;
+  --gold:#C8A66A;
+  --gold-2:#e3cb96;
+  --wrap:1120px;
+  --r:20px;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display:"Instrument Serif","Times New Roman",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;background:var(--bg);
+}
+/* atmosfera: azul profundo com luz discreta */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(42% 32% at 4% 12%,rgba(36,126,103,.20),transparent 70%),
+    radial-gradient(36% 30% at 98% 38%,rgba(30,80,120,.30),transparent 70%),
+    radial-gradient(50% 36% at 50% 108%,rgba(200,166,106,.10),transparent 70%),
+    var(--bg);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.06;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:var(--display);font-weight:400;letter-spacing:-.015em;line-height:1.04;text-wrap:balance}
+h3{font-family:var(--sans);font-weight:600;letter-spacing:-.02em;line-height:1.2}
+em.s{font-family:var(--display);font-style:italic;font-weight:400;color:var(--gold)}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 18px}
+
+.glass{
+  background:linear-gradient(180deg,rgba(245,243,237,.055),rgba(245,243,237,.015));
+  border:1px solid var(--line);border-radius:var(--r);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  box-shadow:inset 0 1px 0 rgba(245,243,237,.06);
+}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font:600 16px/1.1 var(--sans);letter-spacing:-.01em;cursor:pointer;
+  color:#fff;background:linear-gradient(180deg,#2b917a,var(--green));
+  padding:17px 26px;border-radius:999px;border:0;
+  box-shadow:0 0 0 1px rgba(255,255,255,.22) inset,0 12px 40px -10px rgba(36,126,103,.9);
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 18px 50px -10px rgba(47,154,127,1)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px}
+.btn .ar{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--text);color:var(--green);margin-right:-10px}
+.btn .ar svg{width:14px;height:14px}
+.btn--xl{font-size:17px;padding:20px 30px}
+.btn--full{width:100%}
+.checks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-top:18px;font-size:13.5px;color:var(--muted)}
+.checks span{display:inline-flex;align-items:center;gap:7px}
+.checks svg{width:15px;height:15px;color:var(--gold)}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:12px;z-index:40;margin-top:12px}
+.nav__bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 16px;border-radius:999px;background:rgba(9,28,41,.72)}
+.logo{display:flex;align-items:center;gap:10px;font:400 22px/1 var(--display);letter-spacing:.04em;white-space:nowrap}
+.logo img{width:30px;height:30px}
+.logo b{font-weight:400;color:var(--gold)}
+.nav__links{display:none;gap:30px;font-size:14px;color:var(--soft)}
+.nav__links a:hover{color:#fff}
+.nav .btn{padding:11px 16px;font-size:14px}
+.nav .btn .ar{width:22px;height:22px;margin-right:-6px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;text-align:center;padding:26px 0 0;overflow-x:clip}
+.brand{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:22px}
+.brand img{width:54px;height:54px}
+.brand span{font-size:11px;font-weight:500;letter-spacing:.3em;color:var(--gold);display:flex;align-items:center;gap:10px}
+.brand span::before,.brand span::after{content:"";width:22px;height:1px;background:var(--gold);opacity:.7}
+.hero h1{font-size:clamp(40px,11vw,78px);margin:0 auto;max-width:14ch}
+.hero .sub{margin:18px auto 0;max-width:560px;font-size:clamp(16px,4.2vw,19px);color:var(--soft);line-height:1.5}
+.hero__cta{margin-top:26px}
+
+/* leque de capas */
+.fan{position:relative;max-width:560px;margin:44px auto 0;aspect-ratio:560/410}
+.fan::before{content:"";position:absolute;inset:4% 6% 0;z-index:-1;border-radius:50%;filter:blur(20px);
+  background:radial-gradient(50% 50% at 50% 50%,rgba(36,126,103,.5),rgba(200,166,106,.12) 60%,transparent 75%)}
+.fan img{position:absolute;top:0;left:29%;width:42%;height:auto;border-radius:14px;border:1px solid rgba(200,166,106,.4);
+  box-shadow:0 30px 60px -24px rgba(0,0,0,.9)}
+.fan img:nth-child(1){left:3%;top:9%;transform:rotate(-8deg)}
+.fan img:nth-child(2){left:auto;right:3%;top:9%;transform:rotate(8deg)}
+.fan img:nth-child(3){z-index:2;box-shadow:0 30px 70px -20px rgba(0,0,0,.95),0 0 60px -20px rgba(200,166,106,.5)}
+
+/* VSL opcional (aparece só se CONFIG.VSL_EMBED_URL for preenchido) */
+.vsl{margin:36px auto 0;max-width:760px;padding:8px;border-radius:26px}
+.vsl div{position:relative;aspect-ratio:16/9;border-radius:19px;overflow:hidden;background:#04111a}
+.vsl iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ---------- feature cards ---------- */
+.features{display:grid;gap:14px;margin-top:56px;text-align:left}
+.fcard{padding:22px;display:flex;flex-direction:column;min-height:320px;overflow:hidden;position:relative}
+.fcard__h{display:flex;align-items:center;gap:12px}
+.ico{width:40px;height:40px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--gold);
+  background:rgba(200,166,106,.07);border:1px solid rgba(200,166,106,.4)}
+.ico svg{width:19px;height:19px}
+.fcard h3{font-size:18px}
+.fcard p{margin-top:14px;color:var(--muted);font-size:15px;line-height:1.55}
+.fcard__viz{margin-top:auto;padding-top:18px}
+.tchips{display:flex;flex-wrap:wrap;gap:8px}
+.tchip{display:flex;align-items:center;gap:8px;padding:8px 11px;border-radius:11px;font-size:12.5px;font-weight:500;background:rgba(245,243,237,.05);border:1px solid var(--line)}
+.tchip i{font-style:normal;font-size:11px;color:var(--gold);font-variant-numeric:tabular-nums}
+.mock{border-radius:14px;border:1px solid var(--line-2);background:rgba(0,0,0,.25);padding:14px;display:grid;gap:10px}
+.mock span{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--soft)}
+.ok{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff}
+.ok svg{width:14px;height:14px}
+.mock .ok{width:20px;height:20px}.mock .ok svg{width:10px;height:10px}
+
+/* ---------- stats ---------- */
+.stats{margin-top:72px;display:grid;grid-template-columns:repeat(2,1fr);padding:8px}
+.stat{text-align:center;padding:20px 8px}
+.stat b{display:block;font:400 clamp(38px,9vw,54px)/1 var(--display)}
+.stat span{display:block;margin-top:8px;font-size:13px;color:var(--gold)}
+
+/* ---------- seções ---------- */
+.sec{padding:96px 0 0}
+.head{text-align:center;max-width:760px;margin:0 auto 40px}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.tag::before{content:"";width:22px;height:1px;background:var(--gold)}
+.head .tag::after{content:"";width:22px;height:1px;background:var(--gold)}
+.head h2,.split h2,.steps-head h2{font-size:clamp(36px,9vw,62px);margin-top:16px}
+.head p{margin-top:16px;color:var(--soft);font-size:clamp(16px,4vw,18px)}
+
+/* split */
+.split{display:grid;gap:30px;align-items:center}
+.split__p{margin-top:16px;color:var(--soft);font-size:17px;max-width:520px}
+.split .btn{margin-top:26px}
+.panel{padding:20px;display:grid;gap:14px}
+.panel__box{padding:18px;border-radius:16px;border:1px solid var(--line);background:rgba(0,0,0,.22)}
+.panel__box small{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);letter-spacing:.04em}
+.panel__box small b{font-weight:500;color:var(--soft)}
+.alloc{display:flex;height:38px;margin-top:12px;border-radius:10px;overflow:hidden;gap:3px}
+.alloc i{font-style:normal;display:grid;place-items:center;font-size:12.5px;font-weight:600;background:rgba(245,243,237,.14);color:var(--soft);border-radius:4px}
+.alloc i.usd{background:linear-gradient(180deg,#2b917a,var(--green));color:#fff}
+.alloc i.gold{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#2a1f08}
+.panel__arrow{justify-self:center;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(200,166,106,.5);color:var(--gold)}
+.panel__arrow svg{width:16px;height:16px}
+.panel__note{font-size:12px;color:var(--muted);text-align:center}
+
+/* bento */
+.bento{display:grid;gap:14px}
+.bcard{padding:26px;min-height:290px;display:flex;flex-direction:column;overflow:hidden;position:relative}
+.bcard h3{font:400 32px/1.05 var(--display);letter-spacing:-.01em}
+.bcard p{margin-top:12px;color:var(--muted);font-size:15px}
+.bcard--green{background:linear-gradient(165deg,#2f9a7f,var(--green) 55%,#1a6451);border-color:transparent;box-shadow:0 30px 80px -34px rgba(36,126,103,.9)}
+.bcard--green p{color:rgba(245,243,237,.86)}
+.bcard__viz{margin-top:auto;padding-top:20px}
+.bars{display:flex;align-items:flex-end;gap:9px;height:100px}
+.bars i{flex:1;border-radius:6px 6px 2px 2px;background:rgba(245,243,237,.92)}
+.bars i:nth-child(1){height:34%;opacity:.45}.bars i:nth-child(2){height:50%;opacity:.6}.bars i:nth-child(3){height:66%;opacity:.75}.bars i:nth-child(4){height:82%;opacity:.9}.bars i:nth-child(5){height:100%;background:linear-gradient(180deg,var(--gold-2),var(--gold))}
+.week{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.week span{padding:12px 6px;border-radius:12px;border:1px solid var(--line-2);text-align:center;font-size:11.5px;color:var(--muted)}
+.week span b{display:block;font:400 24px/1 var(--display);color:var(--gold);margin-bottom:4px}
+
+/* módulos */
+.steps-head{display:grid;gap:18px;margin-bottom:28px}
+.steps-head p{color:var(--soft);max-width:460px}
+.steps{border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:44px 1fr;gap:6px 14px;padding:24px 4px;border-bottom:1px solid var(--line);position:relative}
+.step::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .3s ease;pointer-events:none;
+  background:radial-gradient(40% 120% at 50% 50%,rgba(200,166,106,.09),transparent 70%)}
+.step:hover::before{opacity:1}
+.step__n{font:400 22px/1 var(--display);color:var(--gold);padding-top:8px}
+.step h3{font:400 clamp(27px,6.6vw,38px)/1.08 var(--display);letter-spacing:-.01em}
+.step h3 small{font:500 12px/1 var(--sans);letter-spacing:.06em;color:var(--muted);margin-left:10px;white-space:nowrap;vertical-align:middle}
+.step p{grid-column:2;color:var(--muted);font-size:15px}
+.step--end{background:linear-gradient(90deg,rgba(200,166,106,.10),transparent 70%)}
+.step--end .step__n svg{width:20px;height:20px}
+
+/* reel das capas */
+.reel{position:relative;margin:8px 0 72px;overflow:hidden;padding:30px 0 40px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.reel__track{display:flex;width:max-content;animation:marq 40s linear infinite}
+.reel:hover .reel__track{animation-play-state:paused}
+.reel__set{display:flex;gap:20px;padding-right:20px}
+@keyframes marq{to{transform:translateX(-50%)}}
+.rc{flex:none;height:clamp(300px,84vw,420px);aspect-ratio:2/3;border-radius:18px;overflow:hidden;position:relative;margin:0;
+  border:1px solid rgba(200,166,106,.3);background:#06131d;box-shadow:0 30px 70px -30px rgba(0,0,0,.9);
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease,border-color .35s ease}
+.rc:hover{transform:translateY(-10px) scale(1.03);border-color:rgba(227,203,150,.85);box-shadow:0 40px 80px -30px rgba(0,0,0,.9),0 0 60px -14px rgba(200,166,106,.55)}
+.rc img{width:100%;height:100%;object-fit:cover}
+
+/* para quem */
+.who{display:grid;gap:12px}
+.wcard{padding:22px;display:flex;gap:14px;align-items:flex-start}
+.wcard b{display:block;font-size:17.5px;font-weight:600;letter-spacing:-.02em;line-height:1.3}
+.wcard span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+.statement{font-family:var(--display);margin:44px auto 0;text-align:center;font-size:clamp(30px,7.4vw,50px);line-height:1.1;max-width:22ch;text-wrap:balance}
+.not{margin:18px auto 0;text-align:center;font-size:14px;color:var(--muted);max-width:520px}
+
+/* oferta */
+.offer{max-width:620px;margin:0 auto}
+.price-card{padding:28px 22px;border-radius:28px;position:relative;overflow:hidden;
+  border:1px solid rgba(200,166,106,.45);box-shadow:0 40px 100px -44px rgba(36,126,103,.9)}
+.price-card::before{content:"";position:absolute;inset:-40% -20% auto;height:70%;pointer-events:none;
+  background:radial-gradient(50% 50% at 50% 50%,rgba(200,166,106,.16),transparent 70%)}
+.price-card>*{position:relative}
+.price-card h2{font-size:clamp(34px,8vw,44px);margin-top:12px}
+.incl{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+.incl li{display:flex;gap:12px;align-items:flex-start;color:var(--soft);font-size:15.5px}
+.incl .ok{width:22px;height:22px}.incl .ok svg{width:11px;height:11px}
+.price{margin:26px 0 22px;padding-top:24px;border-top:1px dashed var(--line-2)}
+.price small{font-size:13px;color:var(--muted)}
+.price__v{display:flex;align-items:flex-start;gap:8px;margin-top:6px;line-height:1;font-family:var(--display)}
+.price__v i{font-style:normal;font-size:26px;margin-top:14px;color:var(--soft)}
+.price__v b{font-weight:400;font-size:clamp(92px,24vw,124px);color:var(--gold);letter-spacing:-.02em}
+.price__v u{text-decoration:none;font-size:38px;margin-top:12px;color:var(--gold)}
+.price p{margin-top:6px;color:var(--soft);font-size:15px}
+.safe{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px;font-size:13px;color:var(--muted)}
+.safe svg{width:14px;height:14px}
+.guar{display:flex;gap:14px;align-items:center;margin-top:18px;padding:16px;border-radius:16px;background:rgba(245,243,237,.03);border:1px solid var(--line)}
+.guar svg{width:36px;height:36px;flex:none;color:var(--gold)}
+.guar b{display:block;font-size:15px;font-weight:600}
+.guar span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+
+/* faq */
+.faq{max-width:800px;margin:0 auto;display:grid;gap:10px}
+.faq details{border-radius:18px;overflow:hidden}
+.faq details[open]{border-color:rgba(200,166,106,.45)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;font-size:17px;font-weight:500;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:20px;font-weight:400;border:1px solid var(--line-2);color:var(--gold);transition:transform .25s ease}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.faq p{padding:0 22px 22px;color:var(--soft);font-size:15.5px}
+
+/* cta final */
+.final{margin-top:96px;padding:56px 22px;border-radius:32px;text-align:center;position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 80% at 50% 120%,rgba(36,126,103,.5),transparent 70%),radial-gradient(30% 50% at 0% 0%,rgba(200,166,106,.12),transparent 70%)}
+.final__art{position:absolute;right:-8%;top:50%;transform:translateY(-50%);width:min(70%,440px);opacity:.1;pointer-events:none}
+.final__txt{position:relative}
+.final h2{font-size:clamp(40px,10vw,72px);max-width:14ch;margin:0 auto}
+.final p{margin:18px auto 0;max-width:560px;color:var(--soft);font-size:17px}
+
+/* footer */
+.footer{margin-top:80px;border-top:1px solid var(--line);padding:40px 0 120px}
+.footer__top{display:flex;flex-direction:column;gap:18px;align-items:flex-start;margin-bottom:26px}
+.footer nav{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:var(--soft)}
+.footer p{font-size:12.5px;line-height:1.6;color:#6f828a;margin-bottom:10px;max-width:880px}
+.footer p b{color:#a3b1b6;font-weight:500}
+
+/* barra fixa mobile */
+.sticky{
+  position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 10px 10px 20px;border-radius:999px;
+  background:rgba(7,22,33,.88);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  border:1px solid rgba(200,166,106,.4);box-shadow:0 20px 50px -10px rgba(0,0,0,.8);
+  transform:translateY(160%);transition:transform .35s ease;
+}
+.sticky.on{transform:none}
+.sticky small{display:block;font-size:11px;color:var(--muted);line-height:1.2}
+.sticky b{font-size:19px;font-weight:600;letter-spacing:-.02em;color:var(--gold);line-height:1.2}
+.sticky .btn{padding:13px 18px;font-size:14.5px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .reel{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+  .reel__track{animation:none}
+  .reel__set[aria-hidden]{display:none}
+}
+
+/* ---------- mobile ---------- */
+@media (max-width:719px){
+  .wrap{padding:0 16px}
+  .nav{display:none}
+  .btn--xl{width:100%;font-size:16.5px;padding:19px 22px}
+  .checks{gap:6px 14px;font-size:12.5px}
+  .sec{padding-top:72px}
+  .head{margin-bottom:26px}
+  .features,.bento{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-16px;margin-right:-16px;padding:4px 16px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .features::-webkit-scrollbar,.bento::-webkit-scrollbar{display:none}
+  .features{margin-top:44px}
+  .fcard,.bcard{flex:0 0 84%;scroll-snap-align:center;min-height:300px}
+  .swipe{display:flex;justify-content:center;gap:6px;margin-top:6px}
+  .swipe i{width:6px;height:6px;border-radius:50%;background:rgba(245,243,237,.22);transition:all .25s ease}
+  .swipe i.on{width:18px;border-radius:4px;background:var(--gold)}
+  .stats{margin-top:36px}
+  .stat{padding:16px 6px}
+  .split{gap:22px}
+  .split__p{font-size:16px}
+  .split .btn{width:100%}
+  .bcard{padding:22px}
+  .reel{margin-bottom:44px;padding:20px 0 28px}
+  .step{padding:20px 2px}
+  .step h3 small{display:block;margin:8px 0 0}
+  .wcard{padding:18px}
+  .faq summary{padding:18px;font-size:16px}
+  .faq p{padding:0 18px 18px}
+  .final{margin-top:72px;padding:44px 18px}
+  .footer{margin-top:56px}
+}
+@media (min-width:720px){
+  .wrap{padding:0 28px}
+  .swipe{display:none}
+  .features,.bento{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .who{grid-template-columns:repeat(2,1fr)}
+  .step{grid-template-columns:70px 1fr 1fr;align-items:center;padding:30px 8px}
+  .step p{grid-column:3}
+  .footer__top{flex-direction:row;justify-content:space-between;align-items:center}
+}
+@media (min-width:1000px){
+  .nav__links{display:flex}
+  .brand{display:none}
+  .hero{padding-top:56px}
+  .sec{padding-top:140px}
+  .fcard{padding:26px;min-height:340px}
+  .split{grid-template-columns:1.05fr 1fr;gap:56px}
+  .steps-head{grid-template-columns:1fr auto;align-items:end}
+  .step{grid-template-columns:110px 1.1fr 1fr;padding:34px 12px}
+  .reel{margin-bottom:96px}
+  .price-card{padding:40px}
+  .final{padding:96px 56px;margin-top:140px;text-align:left}
+  .final__art{opacity:.9;right:6%;width:300px}
+  .final__txt{max-width:600px}
+  .final h2,.final p{margin-left:0}
+  .final .checks{justify-content:flex-start}
+  .footer{padding-bottom:48px}
+  .sticky{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<div class="nav wrap">
+  <div class="nav__bar glass">
+    <a class="logo" href="#topo" aria-label="Plano B, início"><img src="assets/logo-b.png" width="30" height="30" alt=""><span>PLANO <b>B</b></span></a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#modulos">Módulos</a><a href="#para-quem">Para quem é</a><a href="#oferta">Investimento</a><a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn" data-checkout href="#oferta">Quero meu Plano B <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+</div>
+
+<main id="topo">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="brand"><img src="assets/logo-b.png" width="54" height="54" alt="Plano B"><span>PATRIMÔNIO EM DÓLAR</span></div>
+      <h1>Seu patrimônio não precisa depender <em class="s">só do real.</em></h1>
+      <p class="sub">6 módulos diretos ao ponto para você proteger parte do que construiu em dólar, com segurança e dentro da lei.</p>
+
+      <div class="hero__cta">
+        <a class="btn btn--xl" data-checkout href="#oferta">Quero meu Plano B por R$ 37,90 <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <div class="checks">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pagamento único</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cerca de 55 minutos</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>7 dias de garantia</span>
+        </div>
+      </div>
+
+      <!-- Se CONFIG.VSL_EMBED_URL (fim do arquivo) for preenchido, um player de vídeo entra no lugar das capas. -->
+      <div class="fan" id="hero-art">
+        <img src="assets/modulo-02.webp" width="720" height="1080" alt="" decoding="async">
+        <img src="assets/modulo-04.webp" width="720" height="1080" alt="" decoding="async">
+        <img src="assets/modulo-01.webp" width="720" height="1080" alt="Capa do módulo 01: O Risco do Real" decoding="async" fetchpriority="high">
+      </div>
+
+      <!-- cards de benefício -->
+      <div class="features" id="features">
+        <article class="fcard glass rv">
+          <div class="fcard__h"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 3 8-9M15 6h5v5"/></svg></span><h3>Entenda o risco</h3></div>
+          <p>Por que concentrar tudo em uma única moeda é um risco e o que isso significa para o seu poder de compra.</p>
+          <div class="fcard__viz">
+            <svg viewBox="0 0 300 96" aria-hidden="true" style="width:100%">
+              <defs><linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8A66A" stop-opacity=".3"/><stop offset="1" stop-color="#C8A66A" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 84 L30 72 L52 78 L82 56 L104 64 L134 40 L156 50 L186 30 L208 42 L238 20 L260 30 L300 8 L300 96 L0 96Z" fill="url(#ga)"/>
+              <path d="M0 84 L30 72 L52 78 L82 56 L104 64 L134 40 L156 50 L186 30 L208 42 L238 20 L260 30 L300 8" fill="none" stroke="#C8A66A" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="fcard glass rv">
+          <div class="fcard__h"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Escolha seu caminho</h3></div>
+          <p>Os 5 caminhos para ter dólar, lado a lado, para você decidir qual combina com o seu momento.</p>
+          <div class="fcard__viz tchips">
+            <span class="tchip"><i>01</i>Conta global</span>
+            <span class="tchip"><i>02</i>Investimentos</span>
+            <span class="tchip"><i>03</i>EUA</span>
+            <span class="tchip"><i>04</i>Renda fixa</span>
+            <span class="tchip"><i>05</i>Diversificação</span>
+          </div>
+        </article>
+
+        <article class="fcard glass rv">
+          <div class="fcard__h"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Faça tudo dentro da lei</h3></div>
+          <p>Conformidade e regularidade explicadas em linguagem simples, mais os sinais de alerta contra golpes.</p>
+          <div class="fcard__viz">
+            <div class="mock">
+              <span><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Conformidade</span>
+              <span><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Regularidade</span>
+              <span><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Longe de armadilhas</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="swipe" data-for="features" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+
+      <div class="stats glass rv">
+        <div class="stat"><b>6</b><span>módulos objetivos</span></div>
+        <div class="stat"><b>55 min</b><span>de conteúdo direto</span></div>
+        <div class="stat"><b>5</b><span>caminhos para o dólar</span></div>
+        <div class="stat"><b>30 dias</b><span>de plano de ação</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SPLIT ================= -->
+  <section class="sec">
+    <div class="wrap split">
+      <div class="rv">
+        <span class="tag">O problema</span>
+        <h2>Você ganha, guarda e investe <em class="s">em uma moeda só.</em></h2>
+        <p class="split__p">Salário, reserva, imóvel, aposentadoria: tudo em reais. O Plano B é um treinamento curto e prático para você entender como ter uma parte do patrimônio em dólar, sem complicação e sem promessa milagrosa.</p>
+        <a class="btn" data-checkout href="#oferta">Quero meu Plano B <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="panel glass rv" aria-hidden="true">
+        <div class="panel__box">
+          <small><span>SEM PLANO B</span><b>1 moeda</b></small>
+          <div class="alloc"><i style="flex:1">Real</i></div>
+        </div>
+        <span class="panel__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+        <div class="panel__box">
+          <small><span>COM PLANO B</span><b>Proteção em dólar</b></small>
+          <div class="alloc"><i style="flex:1.5">Real</i><i class="usd" style="flex:1">Dólar</i></div>
+        </div>
+        <p class="panel__note">Ilustração. A proporção certa para você é o tema do módulo 02.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BENTO ================= -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="tag">O que muda para você</span>
+        <h2>Clareza para decidir, <em class="s">sem depender de ninguém</em></h2>
+      </div>
+      <div class="bento" id="bento">
+        <article class="bcard glass bcard--green rv">
+          <h3>Do zero a um<br>plano no papel</h3>
+          <p>Você termina sabendo quanto dolarizar, por qual caminho e qual é o seu próximo passo.</p>
+          <div class="bcard__viz"><div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </article>
+        <article class="bcard glass rv">
+          <h3>Segurança<br>para agir</h3>
+          <p>Entenda as regras do jogo e reconheça golpes e armadilhas antes de colocar seu dinheiro em risco.</p>
+          <div class="bcard__viz">
+            <div class="mock">
+              <span><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Tudo dentro da lei</span>
+              <span><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Golpes identificados</span>
+            </div>
+          </div>
+        </article>
+        <article class="bcard glass rv">
+          <h3>Um roteiro<br>de 30 dias</h3>
+          <p>O encerramento organiza tudo em etapas simples para você sair da teoria.</p>
+          <div class="bcard__viz">
+            <div class="week" aria-hidden="true"><span><b>1</b>semana</span><span><b>2</b>semana</span><span><b>3</b>semana</span><span><b>4</b>semana</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="swipe" data-for="bento" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <!-- ================= MÓDULOS ================= -->
+  <section class="sec" id="modulos">
+    <div class="wrap">
+      <div class="steps-head rv">
+        <div>
+          <span class="tag">O que você vai aprender</span>
+          <h2>6 módulos. <em class="s">Zero enrolação.</em></h2>
+        </div>
+        <p>Do risco de ter tudo em reais até o seu plano internacional pronto, em menos de uma hora.</p>
+      </div>
+    </div>
+    <div class="reel rv" aria-label="Capas dos módulos">
+      <div class="reel__track">
+        <div class="reel__set">
+          <figure class="rc"><img src="assets/modulo-01.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 01: O Risco do Real"></figure>
+          <figure class="rc"><img src="assets/modulo-02.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 02: Quanto Dolarizar?"></figure>
+          <figure class="rc"><img src="assets/modulo-03.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 03: Os 5 Caminhos para o Dólar"></figure>
+          <figure class="rc"><img src="assets/modulo-04.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 04: Tudo Dentro da Lei"></figure>
+          <figure class="rc"><img src="assets/modulo-05.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 05: Golpes e Armadilhas"></figure>
+          <figure class="rc"><img src="assets/modulo-06.webp" width="720" height="1080" loading="lazy" decoding="async" alt="Módulo 06: Seu Plano B Internacional"></figure>
+        </div>
+        <div class="reel__set" aria-hidden="true">
+          <figure class="rc"><img src="assets/modulo-01.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+          <figure class="rc"><img src="assets/modulo-02.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+          <figure class="rc"><img src="assets/modulo-03.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+          <figure class="rc"><img src="assets/modulo-04.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+          <figure class="rc"><img src="assets/modulo-05.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+          <figure class="rc"><img src="assets/modulo-06.webp" width="720" height="1080" loading="lazy" decoding="async" alt=""></figure>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="steps">
+        <div class="step rv"><span class="step__n">01</span><h3>O Risco do Real <small>8 MIN</small></h3><p>Por que ter 100% do patrimônio em uma única moeda é um risco que quase ninguém enxerga.</p></div>
+        <div class="step rv"><span class="step__n">02</span><h3>Quanto Dolarizar? <small>8 MIN</small></h3><p>Como definir a fatia em dólar que faz sentido para o seu perfil e os seus objetivos.</p></div>
+        <div class="step rv"><span class="step__n">03</span><h3>Os 5 Caminhos para o Dólar <small>15 MIN</small></h3><p>As principais formas de ter dólar, com as vantagens e os cuidados de cada uma.</p></div>
+        <div class="step rv"><span class="step__n">04</span><h3>Tudo Dentro da Lei <small>8 MIN</small></h3><p>Conformidade e regularidade: o que você precisa saber para fazer tudo certo.</p></div>
+        <div class="step rv"><span class="step__n">05</span><h3>Golpes e Armadilhas <small>6 MIN</small></h3><p>Os sinais de alerta e as promessas que você deve evitar para não perder dinheiro.</p></div>
+        <div class="step rv"><span class="step__n">06</span><h3>Seu Plano B Internacional <small>10 MIN</small></h3><p>Hora de juntar as peças e montar o seu próprio plano.</p></div>
+        <div class="step step--end rv"><span class="step__n"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></span><h3>Seu Plano B em 30 Dias <small>ENCERRAMENTO</small></h3><p>O passo a passo para colocar o plano em prática no próximo mês.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PARA QUEM ================= -->
+  <section class="sec" id="para-quem">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="tag">Para quem é</span>
+        <h2>Feito para quem quer <em class="s">proteger o que construiu</em></h2>
+      </div>
+      <div class="who">
+        <div class="wcard glass rv"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Quem tem tudo em reais</b><span>E quer entender como diversificar em uma moeda forte.</span></div></div>
+        <div class="wcard glass rv"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Quem nunca investiu fora</b><span>E não sabe por onde começar nem em quem confiar.</span></div></div>
+        <div class="wcard glass rv"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Quem tem planos no exterior</b><span>Viagens, estudos, filhos ou uma futura mudança de país.</span></div></div>
+        <div class="wcard glass rv"><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Quem tem medo de errar</b><span>E quer fazer tudo dentro da lei, longe de golpes.</span></div></div>
+      </div>
+      <p class="statement rv">Não é sobre apostar no dólar. <em class="s">É sobre ter liberdade de escolha.</em></p>
+      <p class="not rv">O Plano B não é curso de trading, não é sobre criptomoedas e não promete enriquecimento.</p>
+    </div>
+  </section>
+
+  <!-- ================= OFERTA ================= -->
+  <section class="sec" id="oferta">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="tag">Investimento</span>
+        <h2>Um valor pequeno para <em class="s">uma decisão grande.</em></h2>
+      </div>
+      <div class="offer">
+        <div class="price-card glass rv">
+          <span class="tag">Acesso ao treinamento completo</span>
+          <h2>Plano B · Patrimônio em Dólar</h2>
+          <ul class="incl">
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>6 módulos práticos e diretos ao ponto</li>
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Cerca de 55 minutos de conteúdo</li>
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Os 5 caminhos para ter dólar, comparados</li>
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Como fazer tudo dentro da lei</li>
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Golpes e armadilhas para evitar</li>
+            <li><i class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i>Encerramento: Seu Plano B em 30 Dias</li>
+          </ul>
+          <div class="price">
+            <small>Pagamento único</small>
+            <div class="price__v" aria-label="R$ 37,90"><i>R$</i><b>37</b><u>,90</u></div>
+            <p>Sem mensalidade. Pague uma vez.</p>
+          </div>
+          <a class="btn btn--xl btn--full" data-checkout data-buy href="#oferta">Quero garantir meu acesso <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <div class="safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Pagamento seguro</div>
+          <div class="guar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><b>Garantia de 7 dias</b><span>Se não fizer sentido para você, peça o reembolso em até 7 dias após a compra.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="tag">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details class="glass rv"><summary>É permitido ter patrimônio em dólar?</summary><p>Sim. Brasileiros podem manter recursos em moeda estrangeira e no exterior, desde que sigam as regras de declaração e tributação. O módulo 04 é inteiro sobre isso.</p></details>
+        <details class="glass rv"><summary>Preciso entender de investimentos?</summary><p>Não. O conteúdo foi pensado para quem está começando e usa linguagem simples, sem jargão de mercado.</p></details>
+        <details class="glass rv"><summary>É um curso de trading ou de criptomoedas?</summary><p>Não. O Plano B é educação financeira sobre proteção de patrimônio e planejamento internacional. Não ensina a especular.</p></details>
+        <details class="glass rv"><summary>Vocês indicam onde eu devo investir?</summary><p>Não. O treinamento é educacional: apresenta os caminhos, os cuidados e os critérios para você decidir. Não é recomendação individual de investimento.</p></details>
+        <details class="glass rv"><summary>Quanto tempo dura?</summary><p>São cerca de 55 minutos, divididos em 6 módulos objetivos, mais o encerramento com o plano de 30 dias. Dá para assistir tudo em uma noite.</p></details>
+        <details class="glass rv"><summary>O pagamento é único?</summary><p>Sim. O investimento é de R$ 37,90 em pagamento único, sem mensalidade.</p></details>
+        <details class="glass rv"><summary>E se eu não gostar?</summary><p>Você tem 7 dias após a compra para solicitar o reembolso.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <div class="wrap">
+    <section class="final glass rv">
+      <img class="final__art" src="assets/logo-b.png" width="320" height="320" loading="lazy" decoding="async" alt="">
+      <div class="final__txt">
+        <h2>Todo patrimônio merece <em class="s">um Plano B.</em></h2>
+        <p>6 módulos, menos de uma hora e um caminho claro para proteger parte do que você construiu em dólar.</p>
+        <div class="hero__cta">
+          <a class="btn btn--xl" data-checkout href="#oferta">Quero começar agora <span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <div class="checks"><span>R$ 37,90 · pagamento único · 7 dias de garantia</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a class="logo" href="#topo" aria-label="Plano B"><img src="assets/logo-b.png" width="30" height="30" alt=""><span>PLANO <b>B</b></span></a>
+      <nav aria-label="Rodapé"><a href="#modulos">Módulos</a><a href="#para-quem">Para quem é</a><a href="#oferta">Investimento</a><a href="#faq">Dúvidas</a></nav>
+    </div>
+    <p><b>Aviso:</b> o Plano B é um treinamento educacional. O conteúdo não constitui recomendação, consultoria ou oferta de investimento e não garante resultados financeiros. Investimentos e operações de câmbio envolvem riscos. Avalie sua situação e, se necessário, procure um profissional habilitado.</p>
+    <p>Este site não faz parte do Facebook, Instagram ou da Meta Platforms, Inc., nem é endossado por elas.</p>
+    <p>© <span id="ano">2026</span> Plano B · Patrimônio em Dólar. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- barra fixa de compra (mobile) -->
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div><small>Pagamento único</small><b>R$ 37,90</b></div>
+  <a class="btn" data-checkout href="#oferta" tabindex="-1">Quero meu Plano B</a>
+</div>
+
+<script>
+/* ======================= CONFIG ======================= */
+var CONFIG = {
+  // Cole aqui o link do checkout (Kiwify, Hotmart etc.). Enquanto estiver vazio, os botões levam à seção de oferta.
+  CHECKOUT_URL: "",
+  // Opcional: URL de EMBED de um vídeo de vendas (YouTube: https://www.youtube.com/embed/ID?rel=0 · Vimeo · Panda etc.)
+  VSL_EMBED_URL: ""
+};
+/* ====================================================== */
+(function () {
+  // Indicadores dos carrosséis no celular
+  document.querySelectorAll(".swipe").forEach(function (d) {
+    var box = document.getElementById(d.dataset.for), dots = d.querySelectorAll("i");
+    if (!box) return;
+    box.addEventListener("scroll", function () {
+      var kids = box.children, mid = box.scrollLeft + box.clientWidth / 2, best = 0, bd = 1e9;
+      for (var k = 0; k < kids.length; k++) {
+        var c = kids[k].offsetLeft + kids[k].offsetWidth / 2, dd = Math.abs(c - mid);
+        if (dd < bd) { bd = dd; best = k; }
+      }
+      dots.forEach(function (x, j) { x.classList.toggle("on", j === best); });
+    }, { passive: true });
+  });
+
+  // Aplica o checkout e repassa UTMs / parâmetros da URL (src, sck, utm_*)
+  if (CONFIG.CHECKOUT_URL) {
+    var url = CONFIG.CHECKOUT_URL, qs = location.search.replace(/^\?/, "");
+    if (qs) url += (url.indexOf("?") > -1 ? "&" : "?") + qs;
+    document.querySelectorAll("[data-checkout]").forEach(function (a) { a.href = url; });
+  }
+
+  if (CONFIG.VSL_EMBED_URL) {
+    var art = document.getElementById("hero-art"), box = document.createElement("div"), inner = document.createElement("div"), f = document.createElement("iframe");
+    box.className = "vsl glass";
+    f.src = CONFIG.VSL_EMBED_URL;
+    f.title = "Vídeo de apresentação do Plano B";
+    f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    inner.appendChild(f); box.appendChild(inner); art.replaceWith(box);
+  }
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+
+  if (!("IntersectionObserver" in window)) {
+    document.querySelectorAll(".rv").forEach(function (e) { e.classList.add("in"); });
+    return;
+  }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".rv").forEach(function (e) { io.observe(e); });
+
+  // barra fixa: aparece após o CTA do hero e some na oferta
+  var s = document.getElementById("sticky"), past = false, inOffer = false;
+  function upd() {
+    var on = past && !inOffer;
+    s.classList.toggle("on", on); s.setAttribute("aria-hidden", on ? "false" : "true");
+    s.querySelector("a").tabIndex = on ? 0 : -1;
+  }
+  new IntersectionObserver(function (es) { past = !es[0].isIntersecting && es[0].boundingClientRect.top < 0; upd(); })
+    .observe(document.querySelector(".hero__cta .btn"));
+  new IntersectionObserver(function (es) { inOffer = es[0].isIntersecting; upd(); }, { threshold: .15 })
+    .observe(document.getElementById("oferta"));
+})();
+</script>
+</body>
+</html>
